@@ -20,7 +20,7 @@ public class MascotAPP {
         m1.color = "Tricolor";
         */
         
-//       System.out.println("Apodo: " + m1.apodo + ", edad: " + m1.edad + ", tipo: " + m1.tipo);
+    //  System.out.println("Apodo: " + m1.apodo + ", edad: " + m1.edad + ", tipo: " + m1.tipo);
 
         System.out.println("");
         
@@ -28,7 +28,7 @@ public class MascotAPP {
         
         System.out.println(m1.toString());
         
-        m1.pasear(100);
+        m1.pasear(100);   //LLAMAMOS EL MÉTODO O FUNCIÓN PASEAR
         
         System.out.println(m1.toString());
         

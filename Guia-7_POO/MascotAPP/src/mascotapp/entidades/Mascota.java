@@ -46,75 +46,75 @@ public class Mascota {
         this.edad = edad;
         this.cola = cola;
         energia = 1000;
-
     }
 
-////    SETTERS     ////////////////////////////////////////////////////////////    
-    public void setNombre(String nombre) {
+////    GETTERS & SETTERS     ////////////////////////////////////////////////// 
 
-        if (nombre.length() > 3) {
-            this.nombre = nombre;
-        }
-    }
-
-    public void setApodo(String apodo) {
-        this.apodo = apodo;
-    }
-
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
-    }
-
-    public void setRaza(String raza) {
-        this.raza = raza;
-    }
-
-    public void setColor(String color) {
-        this.color = color;
-    }
-
-    public void setEdad(int edad) {
-        this.edad = edad;
-    }
-
-    public void setCola(boolean cola) {
-        this.cola = cola;
-    }
-
-////    GETTERS     ////////////////////////////////////////////////////////////    
     public String getNombre() {
         return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
     public String getApodo() {
         return apodo;
     }
 
+    public void setApodo(String apodo) {
+        this.apodo = apodo;
+    }
+
     public String getTipo() {
         return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
     }
 
     public String getRaza() {
         return raza;
     }
 
+    public void setRaza(String raza) {
+        this.raza = raza;
+    }
+
     public String getColor() {
         return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
     }
 
     public int getEdad() {
         return edad;
     }
 
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+
     public boolean isCola() {
         return cola;
+    }
+
+    public void setCola(boolean cola) {
+        this.cola = cola;
     }
 
     public int getEnergia() {
         return energia;
     }
 
-////    MÉTODOS     ////////////////////////////////////////////////////////////
+    public void setEnergia(int energia) {
+        this.energia = energia;
+    }
+
+////    FUNCIONES     ////////////////////////////////////////////////////////////
     /**
      * FUNCIÓN DESTINADA A PASEAR
      *
