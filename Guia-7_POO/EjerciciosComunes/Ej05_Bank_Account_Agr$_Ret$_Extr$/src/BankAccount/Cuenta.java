@@ -76,12 +76,12 @@ public class Cuenta {
 // CREAR OBJETO CUENTA:
     public void cuenta() {
         System.out.println("Ingrese su n° de cta:");
-        this.numeroCuenta = leer.nextInt();
+        numeroCuenta = leer.nextInt();
 
         System.out.println("Ingrese su DNI:");
-        this.DNI = leer.nextInt();
+        DNI = leer.nextInt();
 
-        this.SaldoActual = 0.0;
+        SaldoActual = 0.0;
     }
 
 // INGRESAR DINERO:    
@@ -99,13 +99,14 @@ public class Cuenta {
 // RETIRAR DINERO:    
     public void retirarDinero(double retiro) {
 
-        if (retiro > 0 || SaldoActual > retiro) {
-            SaldoActual -= retiro;
+        if (retiro > 0 && SaldoActual > retiro) {
+           //SaldoActual = 0;
+          SaldoActual -= retiro;
 
         } else if (retiro > 0 && SaldoActual < retiro) {
             retiro = SaldoActual;
         }
-
+        
         System.out.println("Saldo actual: " + SaldoActual);
     }
 
