@@ -100,14 +100,15 @@ public class Cuenta {
     public void retirarDinero(double retiro) {
 
         if (retiro > 0 && SaldoActual > retiro) {
-           //SaldoActual = 0;
+
           SaldoActual -= retiro;
 
         } else if (retiro > 0 && SaldoActual < retiro) {
-            retiro = SaldoActual;
+            
+            SaldoActual = 0;
         }
         
-        System.out.println("Saldo actual: " + SaldoActual);
+        System.out.println("Saldo insuficiente: " + SaldoActual);
     }
 
 // EXTRACCIÓN RÁPIDA (20%)
