@@ -47,9 +47,6 @@ public class Main_Persona {
 //Llamo al servicio:
         Class_Servicio Pack_Servicio = new Class_Servicio();
 
-//Creo los objetos personas:
-        Persona Personas = Pack_Servicio.crearPersonas();
-
 //Defino cantidad de personas: Ej, 4 personas
         int num = 2;
 
@@ -60,7 +57,7 @@ public class Main_Persona {
         
         boolean[] mayorDeEdad = new boolean[num];
 
-        for (int i = 0; i < num - 1; i++) {
+        for (int i = 0; i < num; i++) {
             personasCreadas[i] = Pack_Servicio.crearPersonas();
 
             imc[i] = personasCreadas[i].calcularIMC();
