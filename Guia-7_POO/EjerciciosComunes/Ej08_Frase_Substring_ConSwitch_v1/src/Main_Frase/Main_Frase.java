@@ -111,8 +111,7 @@ public class Main_Frase {
                     System.out.println("7. Contiene letra:");
                     System.out.println("Ingrese una letra:");
                     String letra2 = leer.next();
-                    System.out.println("¿La palabra contiene la letra: '" + letra2 + "'?");
-                    System.out.println(fraseUsuario.contiene(letra2));
+                    fraseUsuario.contiene(letra2);
                     break;
 
                 case 0:

@@ -68,7 +68,6 @@ public class Cadena {
         this.longitud = longitud;
     }
 
-
 //MOSTRAR VOCALES:
     public void mostrarVocales() {
 
@@ -89,7 +88,7 @@ public class Cadena {
 
         System.out.println("Frase/Palabra invertida: ");
 
-    //Invierto el FOR desde el final de la frase -1 hasta 0 y pongo i--
+        //Invierto el FOR desde el final de la frase -1 hasta 0 y pongo i--
         for (int i = longitud - 1; i >= 0; i--) {
             System.out.print((frase).substring(i, i + 1));
         }
@@ -126,39 +125,39 @@ public class Cadena {
 
 //  UNIR FRASES:
     public void unirFrases(String fraseC) {
-        // Elimina todos los espacios, pero no los tabuladores ni retornos
+        //Elimina todos los espacios, pero no los tabuladores ni retornos
         System.out.println(frase.replace(" ", "") + fraseC.replace(" ", ""));
     }
 
 // REEMPLAZAR CARACTER:
     public void reemplazar(String caracter) {
 
+        System.out.println(frase.replace("a", caracter));
+
+        /*  Otra forma:     
         for (int i = 0; i < longitud; i++) {
-
             if ((frase).substring(i, i + 1).equals("a")) {
-
                 System.out.print(caracter);
-
             } else {
-
                 System.out.print((frase).substring(i, i + 1));
             }
         }
-        System.out.println("");
+        System.out.println("");*/
     }
 
 // CONTIENE:
-    public boolean contiene(String letra2) {
+    public void contiene(String letra2) {
 
+        System.out.println("¿Contiene la letra: '" + letra2 + "'? " + frase.contains(letra2));
+
+        /*  Otra forma:    
+        public boolean contiene(String letra2) {
         boolean retorno = false;
-
         for (int i = 0; i < longitud; i++) {
-
             if ((frase).substring(i, i + 1).equals(letra2)) {
-
                 retorno = true; 
             }
         }
-        return retorno;
+        return retorno; */
     }
 }
