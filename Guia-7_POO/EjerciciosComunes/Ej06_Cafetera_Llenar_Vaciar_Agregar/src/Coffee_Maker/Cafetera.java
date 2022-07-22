@@ -74,8 +74,18 @@ public class Cafetera {
 
 /// FUNCIÓN LLENAR CAFETERA:
     public void llenarCafetera() {
+        
+    if (capacidadMaxima < cantidadActual){    
+        
+        System.out.println("Se sobrellenó la cafetera.");
+        
+    }else{
         cantidadActual = capacidadMaxima;
         System.out.println("Cant. actual: " + cantidadActual);
+        
+    }
+    
+    
     }
 
 //  SERVIR TAZA:

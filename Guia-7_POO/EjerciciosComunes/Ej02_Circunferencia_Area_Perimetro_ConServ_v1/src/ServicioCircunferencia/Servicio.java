@@ -15,7 +15,7 @@ import java.util.Scanner;
 
 public class Servicio {
 
-    private Scanner leer = new Scanner(System.in).useDelimiter("\n");
+    Scanner leer = new Scanner(System.in).useDelimiter("\n");
 
 /// FUNCIÓN PARA CREAR Y LLENAR CON INFO LA CIRCUNFERENCIA:
     public Circunferencia crearCircunferencia() {
