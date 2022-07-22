@@ -53,4 +53,3 @@ public class Vector {
         return "Vector: {" + " Longitud = " + longitud + ", valores = " + valores + '}';
     }
 }
-

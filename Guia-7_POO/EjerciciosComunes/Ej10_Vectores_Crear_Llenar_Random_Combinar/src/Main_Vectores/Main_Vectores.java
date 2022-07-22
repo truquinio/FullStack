@@ -41,7 +41,7 @@ public class Main_Vectores {
         }
         System.out.println("\n");                                               //SOUT para bajar el BUIL PROJECT y dejar un espacio extra.-
 
-/// ORDENAR VECTOR A: LLLENAR y ESCRIBIR;
+/// ORDENAR VECTOR A: LLENAR y ESCRIBIR;
         System.out.println("Vector A: De menor a mayor:");
         
         Arrays.sort(vectorA,0,50);
@@ -51,9 +51,7 @@ public class Main_Vectores {
             System.out.print("[" + vectorA[i] + "]");
         }
         System.out.println("\n");                                               //SOUT para bajar el BUIL PROJECT y dejar un espacio extra.-
-
-        
-        
+  
 /// VECTOR B:
         System.out.println("Vector B:");
 
@@ -75,29 +73,3 @@ public class Main_Vectores {
         System.out.println ("\n");
     }
 }
-
-
-
-/*
-    System.out.println(Arrays.toString(a));
-            Arrays.sort(vectorA);
-
-            System.out.print(Arrays.toString(vectorA));
-        }
-        
- */
-/// LLENAR VECTOR B con VECTOR A:
-/*for (int i = 0; i < 10; i++) {
-            for (int j = 0; j < 10; j++) {
-                vectorA[i] = vectorB[j];
-                
-                for (int k = 0; k < 10; k++) {
-                    
-                    vectorB[j] = vectorC[k];
-                    
-                    System.out.print("[" + formato.format(vectorA[i]) + "]");
-                }
-
-            }
-        }
-        System.out.println("\n");*/
